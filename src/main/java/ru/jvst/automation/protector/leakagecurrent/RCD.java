@@ -16,5 +16,4 @@ import ru.jvst.automation.protector.leakagecurrent.characteristic.LeakageType;
 public class RCD extends Protector implements LeakageCurrent {
     private Leakage leakage;
     private LeakageType leakageType;
-
 }
