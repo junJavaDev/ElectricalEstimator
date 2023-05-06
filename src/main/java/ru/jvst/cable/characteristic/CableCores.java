@@ -1,4 +1,4 @@
-package ru.jvst.breakers.characteristics;
+package ru.jvst.cable.characteristic;
 
 public enum CableCores {
     _1,

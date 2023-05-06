@@ -1,8 +1,8 @@
-package ru.jvst.breakers;
+package ru.jvst.breaker;
 
 import lombok.Builder;
 import lombok.Data;
-import ru.jvst.breakers.characteristics.*;
+import ru.jvst.breaker.characteristic.*;
 
 /**
  * Дифференциальный автомат

@@ -1,10 +1,10 @@
-package ru.jvst.breakers;
+package ru.jvst.breaker;
 
 import lombok.Builder;
 import lombok.Data;
-import ru.jvst.breakers.characteristics.Amperage;
-import ru.jvst.breakers.characteristics.BreakerType;
-import ru.jvst.breakers.characteristics.OverCurrent;
+import ru.jvst.breaker.characteristic.Amperage;
+import ru.jvst.breaker.characteristic.BreakerType;
+import ru.jvst.breaker.characteristic.OverCurrent;
 
 /**
  * Автоматический выключатель

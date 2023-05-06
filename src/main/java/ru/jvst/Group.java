@@ -1,30 +1,32 @@
 package ru.jvst;
 
+import lombok.Builder;
 import lombok.Data;
-import ru.jvst.breakers.characteristics.*;
+import ru.jvst.breaker.characteristic.*;
+import ru.jvst.cable.Cable;
+import ru.jvst.pipe.Pipe;
+import ru.jvst.pipe.characteristics.PipeSection;
+import ru.jvst.pipe.characteristics.PipeType;
 
 /**
  * Группа, т.е. линия от щита до потребителя, у которой есть свой автоматический выключатель
  **/
 @Data
+@Builder
 public class Group {
     private String name;                                    // Название группы
 
     private LeakageCurrent leakageCurrent;                  // Защита от утечки по току
     private OverCurrent overCurrent;                        // Защита от перегрузки по току
 
+    private Cable cable;                                    // Кабель
     private float cableLength;                              // Длина кабеля
-    private CableSection cableSection;                      // Сечение кабеля
-    private CableType cableType;                            // Тип кабеля
-    private CableFlexibility cableFlexibility;              // Гибкость кабеля
-    private CableCores cableCores;                          // Жилы кабеля
 
-    private float corrugatedPipeLength;                     // Длина гофры
-    private CorrugatedPipeSection corrugatedPipeSection;    // Сечение гофры
-    private CorrugatedPipeType corrugatedPipeType;          // Тип гофры
+    private Pipe pipe;                                      // Гофра
+    private float pipeLength;                               // Длина гофры
 
-    private int installationBox;                            // Подрозетник
     private int deepInstallationBox;                        // Глубокий подрозетник
+    private int installationBox;                            // Подрозетник
 
 
 

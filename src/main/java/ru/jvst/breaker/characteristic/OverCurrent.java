@@ -1,4 +1,4 @@
-package ru.jvst.breakers.characteristics;
+package ru.jvst.breaker.characteristic;
 
 /**
  * Защита от перегрузки по току
