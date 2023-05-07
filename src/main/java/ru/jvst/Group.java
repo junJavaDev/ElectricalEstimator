@@ -5,8 +5,6 @@ import lombok.Data;
 import ru.jvst.breaker.characteristic.*;
 import ru.jvst.cable.Cable;
 import ru.jvst.pipe.Pipe;
-import ru.jvst.pipe.characteristics.PipeSection;
-import ru.jvst.pipe.characteristics.PipeType;
 
 /**
  * Группа, т.е. линия от щита до потребителя, у которой есть свой автоматический выключатель
