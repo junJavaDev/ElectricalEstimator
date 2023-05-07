@@ -1,9 +1,12 @@
-package ru.jvst.breaker.characteristic;
+package ru.jvst.automation.protection;
+
+import ru.jvst.automation.characteristic.Amperage;
+import ru.jvst.automation.characteristic.BreakerType;
 
 /**
  * Защита от перегрузки по току
  */
-public interface OverCurrent {
+public interface Overcurrent {
     Amperage getAmperage();
     void setAmperage(Amperage amperage);
 

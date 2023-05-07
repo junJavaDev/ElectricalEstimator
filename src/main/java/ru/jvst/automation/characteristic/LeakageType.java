@@ -1,4 +1,4 @@
-package ru.jvst.breaker.characteristic;
+package ru.jvst.automation.characteristic;
 
 /**
  * Тип утечки

@@ -2,7 +2,8 @@ package ru.jvst;
 
 import lombok.Builder;
 import lombok.Data;
-import ru.jvst.breaker.characteristic.*;
+import ru.jvst.automation.protection.LeakageCurrent;
+import ru.jvst.automation.protection.Overcurrent;
 import ru.jvst.cable.Cable;
 import ru.jvst.pipe.Pipe;
 
@@ -15,7 +16,7 @@ public class Group {
     private String name;                                    // Название группы
 
     private LeakageCurrent leakageCurrent;                  // Защита от утечки по току
-    private OverCurrent overCurrent;                        // Защита от перегрузки по току
+    private Overcurrent overCurrent;                        // Защита от перегрузки по току
 
     private Cable cable;                                    // Кабель
     private float cableLength;                              // Длина кабеля
