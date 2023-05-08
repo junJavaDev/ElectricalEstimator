@@ -1,10 +1,9 @@
 package ru.jvst.automation.protector.leakagecurrent;
 
-import lombok.Builder;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
-import ru.jvst.automation.characteristic.*;
-import ru.jvst.automation.protector.characteristic.Amperage;
+import lombok.experimental.SuperBuilder;
+import ru.jvst.automation.protector.Protector;
 import ru.jvst.automation.protector.leakagecurrent.characteristic.Leakage;
 import ru.jvst.automation.protector.leakagecurrent.characteristic.LeakageType;
 
@@ -12,10 +11,9 @@ import ru.jvst.automation.protector.leakagecurrent.characteristic.LeakageType;
  * Устройство защитного отключения (УЗО)
  */
 @Data
-@Builder
+@SuperBuilder
 @EqualsAndHashCode
-public class RCD implements LeakageCurrent {
-    private Amperage amperage;
+public class RCD extends Protector implements LeakageCurrent {
     private Leakage leakage;
     private LeakageType leakageType;
 

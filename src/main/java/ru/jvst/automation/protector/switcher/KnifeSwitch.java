@@ -1,16 +1,15 @@
-package ru.jvst.automation.protector.swincher;
+package ru.jvst.automation.protector.switcher;
 
-import lombok.Builder;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
+import lombok.experimental.SuperBuilder;
 import ru.jvst.automation.protector.Protector;
-import ru.jvst.automation.protector.characteristic.Amperage;
 
 /**
  * Рубильник
  */
 @Data
-@Builder
+@SuperBuilder
 @EqualsAndHashCode
 public class KnifeSwitch extends Protector {
 }

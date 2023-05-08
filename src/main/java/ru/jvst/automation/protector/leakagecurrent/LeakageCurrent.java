@@ -1,6 +1,6 @@
 package ru.jvst.automation.protector.leakagecurrent;
 
-import ru.jvst.automation.protector.characteristic.Amperage;
+import ru.jvst.automation.protector.Protect;
 import ru.jvst.automation.protector.leakagecurrent.characteristic.Leakage;
 import ru.jvst.automation.protector.leakagecurrent.characteristic.LeakageType;
 
@@ -8,10 +8,7 @@ import ru.jvst.automation.protector.leakagecurrent.characteristic.LeakageType;
  * Защита от утечки тока
  */
 
-public interface LeakageCurrent {
-    Amperage getAmperage();
-    void setAmperage(Amperage amperage);
-
+public interface LeakageCurrent extends Protect {
     Leakage getLeakage();
     void setLeakage(Leakage leakage);
 
