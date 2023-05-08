@@ -2,8 +2,8 @@ package ru.jvst;
 
 import lombok.Builder;
 import lombok.Data;
-import ru.jvst.automation.protection.LeakageCurrent;
-import ru.jvst.automation.protection.Overcurrent;
+import ru.jvst.automation.protector.leakagecurrent.LeakageCurrent;
+import ru.jvst.automation.protector.overcurrent.Overcurrent;
 import ru.jvst.cable.Cable;
 import ru.jvst.pipe.Pipe;
 

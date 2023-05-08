@@ -1,10 +1,12 @@
-package ru.jvst.automation;
+package ru.jvst.automation.protector.leakagecurrent;
 
 import lombok.Builder;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import ru.jvst.automation.characteristic.*;
-import ru.jvst.automation.protection.LeakageCurrent;
+import ru.jvst.automation.protector.characteristic.Amperage;
+import ru.jvst.automation.protector.leakagecurrent.characteristic.Leakage;
+import ru.jvst.automation.protector.leakagecurrent.characteristic.LeakageType;
 
 /**
  * Устройство защитного отключения (УЗО)

@@ -1,4 +1,4 @@
-package ru.jvst.automation.characteristic;
+package ru.jvst.automation.protector.leakagecurrent.characteristic;
 
 /**
  * Утечка тока

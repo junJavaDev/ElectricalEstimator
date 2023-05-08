@@ -1,4 +1,4 @@
-package ru.jvst.automation.characteristic;
+package ru.jvst.automation.protector.overcurrent.characteristic;
 
 /**
  * Тип автоматического выключателя

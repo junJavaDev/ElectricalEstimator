@@ -1,8 +1,8 @@
-package ru.jvst.automation.protection;
+package ru.jvst.automation.protector.leakagecurrent;
 
-import ru.jvst.automation.characteristic.Amperage;
-import ru.jvst.automation.characteristic.Leakage;
-import ru.jvst.automation.characteristic.LeakageType;
+import ru.jvst.automation.protector.characteristic.Amperage;
+import ru.jvst.automation.protector.leakagecurrent.characteristic.Leakage;
+import ru.jvst.automation.protector.leakagecurrent.characteristic.LeakageType;
 
 /**
  * Защита от утечки тока
